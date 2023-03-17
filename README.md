@@ -7,8 +7,8 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 ### Links
 
-- Solution URL: [https://github.com/AWWALv/Word-Scramble](https://your-solution-url.com)
-- Live Site URL: https://awwalv.github.io/Word-Scramble]
+- Solution URL: [](https://github.com/AWWALv/Word-Scramble)
+- Live Site URL: [](https://awwalv.github.io/Word-Scramble)
 
 ## My process
 
