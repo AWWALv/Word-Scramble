@@ -4,7 +4,7 @@ const inputField = document.querySelector("input");
 const refreshBtn = document.querySelector(".refresh-word");
 const checkBtn = document.querySelector(".check-word"); 
 const timeText = document.querySelector(".time b");
-const inputBtn = document.getElementById("inputBtn")
+
 
 let correctWord,timer;
 
@@ -37,17 +37,6 @@ const initGame = () => {
     
 }
 initGame();
-
-
-inputBtn.addEventListener('keypress',checkWordEnter);
-
-function checkWordEnter(e){
-    if(e.key === "Enter"){
-        checkWord();
-    }
-    
-}
-
 
 
 const checkWord = () => {
