@@ -63,7 +63,7 @@ checkBtn.addEventListener('click',checkWord)
 
 // Create an audio element and set its attributes
 const audio = document.createElement('audio');
-audio.setAttribute('src', '/Users/User./Desktop/AWWAL CODE/NEW AWWAL/Y2MATE/Word Scramble/X2Download.app - 12 Hours of Free Background Music - Copyright Free Music for Creators and Streamers (64 kbps).mp3');
+audio.setAttribute('src', '');
 audio.setAttribute('loop', 'true');
 
 // Attach the audio element to the body of the page
