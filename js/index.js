@@ -40,11 +40,6 @@ initGame();
 
 
 
-inputBtn.addEventListener('keypress',checkWordEnter(e){
-   if(e.key === "Enter"){
-        checkWord();
-    }
-}
 
 
 
