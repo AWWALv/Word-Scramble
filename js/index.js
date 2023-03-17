@@ -38,14 +38,13 @@ const initGame = () => {
 }
 initGame();
 
-function checkWordEnter(e){
-    if(e.key === "Enter"){
+
+
+inputBtn.addEventListener('keypress',checkWordEnter(e){
+   if(e.key === "Enter"){
         checkWord();
     }
-    
 }
-
-inputBtn.addEventListener('keypress',checkWordEnter)
 
 
 
