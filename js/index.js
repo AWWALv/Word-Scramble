@@ -4,7 +4,7 @@ const inputField = document.querySelector("input");
 const refreshBtn = document.querySelector(".refresh-word");
 const checkBtn = document.querySelector(".check-word"); 
 const timeText = document.querySelector(".time b");
-
+const inputBtn = document.getElementById("inputBtn")
 
 let correctWord,timer;
 
@@ -39,6 +39,15 @@ const initGame = () => {
 initGame();
 
 
+function checkWordEnter(e){
+    if(e.key === "Enter"){
+        checkWord();
+    }
+    
+}
+inputBtn.addEventListener('keypress',checkWordEnter);
+
+
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
     if(!userWord) return alert("Please enter the word to check!");
@@ -47,6 +56,9 @@ const checkWord = () => {
     
     initGame();
 }
+
+
+
 
 refreshBtn.addEventListener('click',initGame)
 checkBtn.addEventListener('click',checkWord)
