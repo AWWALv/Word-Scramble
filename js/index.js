@@ -39,7 +39,14 @@ const initGame = () => {
 initGame();
 
 
+inputBtn.addEventListener('keypress',checkWordEnter);
 
+function checkWordEnter(e){
+    if(e.key === "Enter"){
+        checkWord();
+    }
+    
+}
 
 
 
