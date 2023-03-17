@@ -60,19 +60,3 @@ const checkWord = () => {
 
 refreshBtn.addEventListener('click',initGame)
 checkBtn.addEventListener('click',checkWord)
-
-// Create an audio element and set its attributes
-const audio = document.createElement('audio');
-audio.setAttribute('src', '');
-audio.setAttribute('loop', 'true');
-
-// Attach the audio element to the body of the page
-document.body.appendChild(audio);
-
-// Play the music when the page loads
-window.addEventListener('load', () => {
-  audio.play();
-});
-
-
-
