@@ -4,6 +4,7 @@ const inputField = document.querySelector("input");
 const refreshBtn = document.querySelector(".refresh-word");
 const checkBtn = document.querySelector(".check-word"); 
 const timeText = document.querySelector(".time b");
+const inputBtn = document.getElementById("inputBtn")
 
 let correctWord,timer;
 
@@ -37,6 +38,16 @@ const initGame = () => {
 }
 initGame();
 
+function checkWordEnter(e){
+    if(e.key === "Enter"){
+        checkWord();
+    }
+    
+}
+
+inputBtn.addEventListener('keypress',checkWordEnter)
+
+
 
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
@@ -46,6 +57,20 @@ const checkWord = () => {
     
     initGame();
 }
+
+// Create an audio element and set its attributes
+const audio = document.createElement('audio');
+audio.setAttribute('src', '/Users/User./Desktop/AWWAL CODE/NEW AWWAL/Y2MATE/Word Scramble/X2Download.app - 12 Hours of Free Background Music - Copyright Free Music for Creators and Streamers (64 kbps).mp3');
+audio.setAttribute('loop', 'true');
+
+// Attach the audio element to the body of the page
+document.body.appendChild(audio);
+
+// Play the music when the page loads
+window.addEventListener('load', () => {
+  audio.play();
+});
+
 
 refreshBtn.addEventListener('click',initGame)
 checkBtn.addEventListener('click',checkWord)
